@@ -30,33 +30,57 @@
       }
       .wrapper {
         display: grid;
-        grid-template-columns: 200px auto 200px;
+        grid-template-columns: 200px auto 300px;
         width: 1280px;
       }
       .sidebar {
+        display: flex;
         background: lightgray;
+        margin: 10px;
+        padding: 10px;
       }
       main {
+        display: flex;
+        justify-content: space-between;
         background: white;
-        padding: 50px;
+        padding: 20px;
+        margin: 10px;
       }
       .userbar {
+        display: flex;
         background: lemonchiffon;
+        margin: 10px;
+        padding: 10px;
       }
       .search__input {
         border: none;
+        width: 100%;
         font-size: 1rem;
         padding: 1rem;
       }
       .search {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        width: 400px;
+        width: 200px;
+        height: 40px;
         border-radius: 12px;
         padding-left: 10px;
       }
       .search__icon {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: gray;
+      }
+      section {
+        width: 100%;
+      }
+      li {
+        list-style: none;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        aspect-ratio: 1;
+        margin-top: 1rem;
       }
     </style>
   </head>
@@ -65,6 +89,7 @@
       <aside class="sidebar"></aside>
 
       <main>
+        <h2 class="title">Dashboard</h2>
         <div class="search">
           <span class="search__icon">
             <i class="las la-search"></i>
@@ -72,9 +97,59 @@
 
           <input type="text" class="search__input" placeholder="Search"/>
         </div>
+        <h3>New Courses</h3>
       </main>
 
-      <div class="userbar"></div>
+      <div class="userbar">
+        <h3>Profile</h3>
+        <section>
+          <h4>November 2022</h4>    
+          <ul>
+            <li class="ist-bold">Sun</li>
+            <li class="ist-bold">Mon</li>
+            <li class="ist-bold">Tue</li>
+            <li class="ist-bold">Wed</li>
+            <li class="ist-bold">Thu</li>
+            <li class="ist-bold">Fri</li>
+            <li class="ist-bold">Sat</li>
+            <li>30</li>
+            <li>31</li>
+            <li>01</li>
+            <li>02</li>
+            <li>03</li>
+            <li>04</li>
+            <li>05</li>
+            <li>06</li>
+            <li>07</li>
+            <li>08</li>
+            <li>09</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>01</li>
+            <li>02</li>
+            <li>03</li>
+          </ul>
+        </section>
+      </div>
     </div>
   </body>
 </html>
