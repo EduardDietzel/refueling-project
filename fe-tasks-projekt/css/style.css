@@ -45,9 +45,15 @@ body {
     line-height: 33px;
     color: gray;
 }
+.service__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .service__item {
     min-height: 200px;
-    width: 30%;
+    /* width: 30%; */
     background-image: url(../img/rectangle3.jpg);
 }
 
