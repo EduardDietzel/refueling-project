@@ -9,7 +9,7 @@ SELECT * FROM hr.employees WHERE job_id IN ('FI_ACCOUNT') && salary < 8000;
 
 SELECT * FROM hr.employees WHERE last_name LIKE '%ll%' OR last_name LIKE '%kk%';
 
-SELECT * FROM hr.employees WHERE commission_pct <=> NULL;
+SELECT * FROM hr.employees WHERE commission_pct is NULL;
 
 SELECT * FROM hr.employees WHERE department_id <> 80 && department_id <> 110;
 
