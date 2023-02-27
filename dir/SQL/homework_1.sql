@@ -2167,10 +2167,13 @@ SELECT employee_id, first_name, last_name, salary, department_id FROM hr.employe
 SELECT * FROM hr.employees WHERE job_id like 'FI_ACCOUNT' && salary < 8000;
 SELECT * FROM hr.employees WHERE job_id IN ('FI_ACCOUNT') && salary < 8000;
 
+
 SELECT * FROM hr.employees WHERE last_name LIKE '%ll%' OR last_name LIKE '%kk%';
 
-SELECT * FROM hr.employees WHERE commission_pct <=> NULL;
+SELECT * FROM hr.employees WHERE commission_pct is NULL;
 
 SELECT * FROM hr.employees WHERE department_id <> 80 && department_id <> 110;
+select * from hr.employees WHERE department_id not in (80, 110);
 
 SELECT * FROM hr.employees WHERE 5000 <= salary && salary <= 7000;
+SELECT * FROM hr.employees WHERE salary between 5000 and 7000;

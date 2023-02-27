@@ -8,7 +8,8 @@ create table learn.product(
     discount decimal(2,1)	
 );
 
-insert into learn.product (title, price, discount) values 
+insert into learn.product (title, price, discount) 
+	values 
 					 ('Велосипед', 50000, 0.9),
                      ('Ролики', 15000, 0.1),
                      ('Лыжи', 25000, null),

@@ -63,5 +63,9 @@ select
 	first_name,
     last_name    
 from employees
-where department_id = 60 and salary >= 5000;
+where department_id = 100 and salary >= 5000;
 
+select *
+from employees
+where salary >= 5000
+limit 10;
